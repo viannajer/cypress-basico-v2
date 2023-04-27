@@ -1,7 +1,7 @@
 
 /// reference types="Cypress" />
 describe('Central de Atendimento ao Cliente TAT', function() {
-  beforeEach(function(){ //beforeEach (antes de Cada): colocando essa linha para não ter que repetir o comando cy.visit em cada linha. Recomendado usar essa função quando em todos os testes do switch use uma mesma função
+  beforeEach(function(){ //beforeEach (antes de Cada): colocando essa linha para não ter que repetir o comando cy.visit em cada linha (cada novo teste). Recomendado usar essa função quando em todos os testes do switch use uma mesma função
     cy.visit('src/index.html')
     })
     it('verifica o título da aplicação', function(){
